@@ -10,10 +10,22 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #efefef;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
+}
+
+.titulo {
+  width: 100%;
+  margin: 1em 0;
+}
+.titulo h2 {
+  color: #000;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .ir-arriba {
@@ -85,7 +97,7 @@ body {
 }
 .header .header__logo {
   width: 10em;
-  padding: 1em;
+  margin-left: 1.5em;
 }
 
 .nav-desktop {
@@ -164,6 +176,7 @@ body {
   -webkit-transition: ease-in-out 0.5s;
   -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+  z-index: 100;
 }
 .nav-mobile .enlaces-mobile li {
   list-style: none;
@@ -209,6 +222,131 @@ body {
 .main__news {
   margin-top: 2em;
   width: 100%;
+}
+
+.contacto__info-map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto__datos {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 3em;
+}
+.contacto__datos a {
+  text-decoration: none;
+  color: #000;
+  margin: 0.3em 0;
+}
+
+.contacto iframe {
+  margin: 1em auto;
+}
+
+.contenedor-contacto {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.formulario {
+  width: 90%;
+  padding: 20px 0;
+}
+
+.formulario__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.formulario__grupo {
+  width: 90%;
+}
+.formulario__grupo input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+.formulario__grupo textarea {
+  width: 100%;
+  height: 85px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  font-size: 16px;
+  border: none;
+}
+
+.formularo__telYmail {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.formularo__telYmail .email, .formularo__telYmail .telefono {
+  width: 100%;
+}
+
+.formulario__boton {
+  width: 90%;
+  height: 45px;
+  background: #011925;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 6px 11px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 3px 6px 11px 0px rgba(0, 0, 0, 0.49);
+}
+.formulario__boton:hover {
+  background: #213f4f;
 }
 
 .footer {
@@ -262,6 +400,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .contenedor-contacto {
+    flex-direction: row-reverse;
   }
 }
 

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-    <title>HG - Aberturas - Blog</title>
+    <title>HG - Aberturas - Contacto</title>
 </head>
 <body>
 
@@ -56,10 +56,52 @@
 
     <main class="main">
 
-        <div class="main__news">
-            <div class="embedsocial-hashtag" data-ref="f6b4d2c75984f63e628a57bcd253189dde9866b0" ><a class="feed-powered-by-es" href="https://embedsocial.com/products/embedfeed/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div>
-            <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
-        </div>
+
+
+        <section class="contacto contenedor-contacto">
+        
+            <div class="contacto__info-map">
+                <div class="titulo">
+                    <h2>CONTACTO</h2>
+                </div>
+                <div class="contacto__datos">
+                    <a href="https://www.instagram.com/hg_aberturas/" target="_blank"><i class="fab fa-instagram"></i> instagram.com/hg_aberturas</a>
+                    <a href="https://api.whatsapp.com/send?text=&phone=541140697236" target="_blank"><i class="fas fa-mobile-alt"></i> +54 11 4069 7236</a>
+                </div>
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.725690775225!2d-58.49879917244972!3d-34.605895575918744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9df44319d89%3A0x72e02046997c8cef!2sVilla%20del%20Parque%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1621979500842!5m2!1sen!2sar" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+
+
+            <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+                <div class="formulario__contenedor">
+                    <div class="titulo">
+                        <h2>ENVIA TU CONSULTA</h2>
+                    </div>
+        
+                    <div class="formulario__grupo nombre">
+                        <input type="text" name="nombre" id="" placeholder="Nombre*" maxlength="30" required>
+                    </div>    
+
+                    <div class="formularo__telYmail">
+                        <div class="formulario__grupo email">
+                            <input type="email" name="email" id="" placeholder="E-mail*" required>
+                        </div>  
+                        <div class="formulario__grupo telefono">
+                            <input type="number" name="telefono" id="" placeholder="Teléfono*" required>
+                        </div>  
+                    </div>
+                    <div class="formulario__grupo textarea">  
+                        <textarea name="consulta" id="" rows="3" placeholder="Consulta*" maxlength="300" required></textarea>
+                    </div>
+
+                    <button type="submit" class="formulario__boton">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
 
     </main>
     
