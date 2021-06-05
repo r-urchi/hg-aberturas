@@ -1,118 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HG Aberturas</title>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/sheetslider.css"/>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <title>HG - Aberturas</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <span class="ir-arriba"><i class="fas fa-chevron-circle-up"></i></span>
     <a href="https://api.whatsapp.com/send?text=&phone=541140697236" target="_blank" class="btn-whatsapp"><span>CONTACTANOS POR WHATSAPP</span><i class="fab fa-whatsapp"></i></a>
 
+	<nav class="nav">
+		<a href="#inicio" class="marca">HG ABERTURAS</a>
+		<ul id="menu" class="menu">
+			<li data-menuanchor="inicio" class="active">
+				<a href="#inicio">Inicio</a>
+			</li>
 
-    <header class="header">
-        <a class="header__home" href="index.html">
-            <img class="header__logo" src="img/hg-logo.jpg" alt="Logo">
-        </a>
+			<li data-menuanchor="quienes-somos">
+				<a href="#quienes-somos">Quienes somos</a>
+			</li>
 
-        <div class="menu-mobile" id="nav">
-            <section class="contenedor nav-mobile">
+			<li data-menuanchor="productos">
+				<a href="#productos">Productos</a>
+			</li>
 
-                <ul class="enlaces-mobile">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="servicios.html">SERVICIOS</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-                
+			<li data-menuanchor="servicios">
+				<a href="#servicios">Servicios</a>
+			</li>
 
-                <div class="hamburguer">
-                    <i class="fas fa-bars" id="iconoMenu" ></i>
-                </div>
-            </section>
-        </div>
+			<li data-menuanchor="novedades">
+				<a href="#novedades">Novedades</a>
+			</li>
 
-        <nav class="nav-desktop">
-            <ul class="nav-desktop__lista">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+			<li data-menuanchor="contacto">
+				<a href="#contacto">Contacto</a>
+			</li>
+			
+		</ul>
+	</nav>
 
-    </header>
+	<main id="fullpage">
+		<header class="section header">
+			<div class="contenedor-icono">
+				<p><a href="#quienes-somos"><i class="fas fa-chevron-down"></i></a></p>
+			</div>
+		</header>
 
-    <main class="main">
+		<section class="section quienes-somos">
+			<article class="contenedor-quienes-somos">
+				<h2 class="titulo">Quienes somos</h2>
+				<div class="contenedor">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab officia consequuntur distinctio consequatur eius, reprehenderit at? Est, eius. Est, iusto vitae fugiat sed nesciunt placeat deleniti eum reiciendis sit modi. <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ducimus fugiat quo doloribus eveniet necessitatibus, excepturi ipsam harum provident laborum minus eaque cum nihil facilis similique ut dicta qui non! <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatem facilis consequuntur. Animi ab iste error eveniet aut veniam pariatur saepe exercitationem, voluptatibus quaerat iure atque officia eos quidem dolorem!</p>
+				</div>
+			</article>
+		</section>
 
-        <div class="main__slider">
-            <!--Sheet Slider-->
-            <div class="sheetSlider sh-default sh-auto">
-                <input id="s1" type="radio" name="slide1" checked/> 
-                <input id="s2" type="radio" name="slide1"/> 
-                <input id="s3" type="radio" name="slide1"/> 
-                <div class="sh__content">
-            
-                    <!-- Slider Item -->
-                    <div class="sh__item">
-                        <img src="img/foto1.jpg" alt="imgText"/>
-                    </div>
-                
-                    <!-- Slider Item -->
-                    <div class="sh__item">
-                        <img src="img/foto2.jpg" alt="imgText"/>
-                    </div>
-                
-                    <!-- Slider Item -->
-                    <div class="sh__item">
-                        <img src="img/foto3.jpg" alt="imgText"/>
-                    </div>
-                
-                </div><!-- .sh__content -->
-            
-                <!--botones -->
-                <div class="sh__btns">
-                    <label for="s1"></label>
-                    <label for="s2"></label>
-                    <label for="s3"></label>
-                </div><!-- .sh__btns -->
-            </div><!-- .sheetSlider -->
-        </div>   
-    </main>
-    
-    <footer class="footer">
-        <div class="redes-sociales">
-    
-            <div class="redes-sociales__contenedor-icono">
-                <a href="https://api.whatsapp.com/send?text=&phone=541140697236" target="_blank" class="redes-sociales__enlace"><i class="redes-sociales__icono fas fa-mobile-alt"></i></a>
-            </div>
-    
-            <div class="redes-sociales__contenedor-icono">
-                <a href="https://www.instagram.com/hg_aberturas/" target="_blank" class="redes-sociales__enlace"><i class="fab fa-instagram"></i></a>
-            </div>
+		<section class="section productos">
+			<article class="slide producto-foto">
+				<h3>PRODUCTO 1</h3>
+			</article>
 
-            <div class="redes-sociales__contenedor-icono">
-                <a href="mailto:hg.aberturas@gmail.com" target="_blank" class="redes-sociales__enlace"><i class="fas fa-envelope"></i></a>
-            </div>
-    
-        </div>
-    </footer>
+			<article class="slide producto-foto">
+				<h3>PRODUCTO 2</h3>
+			</article>
 
-    <script src="js/sheetslider.js"></script>
-    <script src="js/menuMobile.js"></script>
-    <script src="js/botonArriba.js"></script>
+			<article class="slide producto-foto">
+				<h3>PRODUCTO 3</h3>
+			</article>
+
+			<article class="slide producto-foto">
+				<h3>PRODUCTO 4</h3>
+			</article>
+
+			<article class="slide producto-foto">
+				<h3>PRODUCTO 5</h3>
+			</article>
+		</section>
+
+		<section class="section servicios">
+			<article class="slide">
+				<video loop muted controls="true" data-autoplay class="bg-video">
+					<source src="media/HG-promo.mp4" type="video/mp4">
+				</video>
+			</article>
+		</section>
+
+		<section class="section novedades">
+			<article class="contenedor-news">
+				<h2 class="titulo">Novedades</h2>
+				<div class="contenedor">
+					<div class="news-nota">
+						<a href="https://noticias.perfil.com/noticias/empresas-y-protagonistas/hg-aberturas-aberturas-de-alto-rendimiento.phtml" target="_blank">
+							<p>Nota en Revista Noticias</p>
+							<img src="media/noticias.JPG" alt="">
+						</a>
+					</div>
+
+					<div class="news-instagram">
+						<a href="https://www.instagram.com/hg_aberturas/" target="_blank">
+							<i class="fab fa-instagram"></i>
+							<p>¡Seguinos en Instagram @hg_aberturas y enterate las últimas novedades!</p>
+						</a>
+					</div>
+
+				</div>
+			</article>
+		</section>
+
+		<footer class="section footer">
+			<article class="contenedor-footer">
+				<h2 class="titulo">CONTACTO</h2>
+				<div class="contenedor">
+					<div class="footer__contenedor-form">
+						<form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+							<div class="formulario__contenedor">
+								<div>
+									<h2>Envia tu consulta</h2>
+								</div>
+					
+								<div class="formulario__grupo nombre">
+									<input type="text" name="nombre" id="" placeholder="Nombre*" maxlength="30" required>
+								</div>    
+			
+								<div class="formularo__telYmail">
+									<div class="formulario__grupo email">
+										<input type="email" name="email" id="" placeholder="E-mail*" required>
+									</div>  
+									<div class="formulario__grupo telefono">
+										<input type="number" name="telefono" id="" placeholder="Teléfono*" required>
+									</div>  
+								</div>
+								<div class="formulario__grupo textarea">  
+									<textarea name="consulta" id="" rows="3" placeholder="Consulta*" maxlength="300" required></textarea>
+								</div>
+			
+								<button type="submit" class="formulario__boton">Enviar</button>
+							</div>
+						</form>
+					</div>
+					<div class="footer__datos">
+						<a href="https://www.instagram.com/hg_aberturas/" target="_blank"><i class="fab fa-instagram"></i> instagram.com/hg_aberturas</a>
+						<a href="https://api.whatsapp.com/send?text=&phone=541140697236" target="_blank"><i class="fas fa-mobile-alt"></i> +54 11 4069 7236</a>
+						<a href="mailto:hg.aberturas@gmail.com" target="_blank"><i class="fas fa-envelope"></i> hg.aberturas@gmail.com</a>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.725690775225!2d-58.49879917244972!3d-34.605895575918744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9df44319d89%3A0x72e02046997c8cef!2sVilla%20del%20Parque%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1621979500842!5m2!1sen!2sar" width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					</div>
+				</div>
+			</article>
+		</footer>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
