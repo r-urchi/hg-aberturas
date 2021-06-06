@@ -522,6 +522,10 @@ a {
     display: block;
   }
 
+  .titulo {
+    font-size: 1em;
+  }
+
   .contenedor-quienes-somos h2 {
     padding: 0.5em;
   }
@@ -531,7 +535,7 @@ a {
     padding: 1em;
   }
   .contenedor-quienes-somos .contenedor p {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   .producto-foto h3 {
@@ -553,10 +557,11 @@ a {
 
   .contenedor-news .contenedor .news-nota a p, .contenedor-news .contenedor .news-instagram a p {
     padding: 1em;
+    font-size: 0.7em;
   }
 
   .contenedor-news .contenedor .news-nota a i, .contenedor-news .contenedor .news-instagram a i {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .contenedor-news .contenedor .news-nota a img, .contenedor-news .contenedor .news-instagram a img {
@@ -577,12 +582,17 @@ a {
   }
 
   .formulario__grupo input, .formulario__grupo textarea {
-    margin: 5px 0;
+    margin: 3px 0;
+    font-size: 0.7em;
   }
 
   .contenedor-footer .footer__contenedor-form, .contenedor-footer .footer__datos {
     width: 100%;
     align-items: center;
+  }
+
+  .formulario__boton {
+    height: 35px;
   }
 
   .contenedor-footer .footer__datos {
