@@ -2,9 +2,14 @@
     .nav
         display: none
 
+    .nav-mobile
+        display: flex
+
     .header
         background: none
         height: 100vh
+        .contenedor-logo img
+            display: block
 
     .contenedor-quienes-somos h2
         padding: .5em
@@ -43,9 +48,18 @@
     .formulario__contenedor h2
         font-size: 1em
 
+    .formulario__boton
+        margin: 0
+
+    .formulario__grupo input, .formulario__grupo textarea
+        margin: 5px 0
+
     .contenedor-footer .footer__contenedor-form, .contenedor-footer .footer__datos
         width: 100%
         align-items: center
         
-    .contenedor-footer .footer__datos a
+    .contenedor-footer .footer__datos
+        a
         font-size: .7em
+        iframe
+            height: 50%
