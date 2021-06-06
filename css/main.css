@@ -21,7 +21,7 @@ a {
 }
 
 .titulo {
-  margin: 2em 0 2em 0;
+  margin: 2em 0 0.5em 0;
   padding: 0;
   font-size: 1.5em;
 }
@@ -181,7 +181,6 @@ a {
   background-size: cover;
   width: 100%;
   height: 100%;
-  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,6 +285,7 @@ a {
 }
 .contenedor-news .contenedor .news-nota a p, .contenedor-news .contenedor .news-instagram a p {
   padding: 1em 5em;
+  text-align: center;
   text-shadow: 0px 0px 20px #000;
 }
 
@@ -416,92 +416,72 @@ a {
   background: #213f4f;
 }
 
-@media screen and (max-width: 768px) {
-  .menu li a,
-.menu li.active a {
-    font-size: 18px;
-  }
-
-  .modelo {
-    font-size: 40px;
-  }
-
-  .precio {
-    font-size: 23px;
-  }
-
-  .footer h2 {
-    font-size: 15px;
-  }
-
-  .footer .redes-sociales {
-    font-size: 30px;
-  }
-
-  .footer .redes-sociales a {
-    width: 70px;
-    height: 70px;
-  }
-
-  .footer .texto-naranja {
-    font-size: 40px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .header .titulo {
-    font-size: 60px;
-  }
-
-  .informacion-producto {
-    position: absolute;
-    top: 70%;
-  }
-
-  .fp-controlArrow.fp-next {
-    left: 100px;
-  }
-
-  .fp-controlArrow.fp-prev {
-    left: 25px;
-  }
-}
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 920px) {
   .nav {
-    display: block;
-    text-align: center;
+    display: none;
   }
 
-  .nav a {
-    font-size: 16px;
-    margin-bottom: 0;
+  .header {
+    background: none;
+    height: 100vh;
   }
 
-  .menu {
-    display: flex;
-    justify-content: space-between;
+  .contenedor-quienes-somos h2 {
+    padding: 0.5em;
   }
 
-  .menu li a,
-.menu li.active a {
-    font-size: 15px;
-    padding: 5px;
+  .contenedor-quienes-somos .contenedor {
+    margin: 0 1em;
+    padding: 1em;
+  }
+  .contenedor-quienes-somos .contenedor p {
+    font-size: 0.9em;
   }
 
-  .titulo {
-    font-size: 45px;
+  .producto-foto h3 {
+    margin: 0 1em;
   }
 
-  .productos .modelo {
-    font-size: 30px;
+  .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    top: 90vh;
   }
 
-  .footer .texto-naranja {
-    font-size: 18px;
+  .contenedor-news .contenedor {
+    flex-direction: column;
+    margin: 0 3em;
   }
 
-  .footer .redes-sociales a {
-    width: 50px;
-    height: 50px;
+  .contenedor-news .contenedor .news-nota, .contenedor-news .contenedor .news-instagram {
+    width: 100%;
+  }
+
+  .contenedor-news .contenedor .news-nota a p, .contenedor-news .contenedor .news-instagram a p {
+    padding: 1em;
+  }
+
+  .contenedor-news .contenedor .news-nota a i, .contenedor-news .contenedor .news-instagram a i {
+    font-size: 5em;
+  }
+
+  .contenedor-news .contenedor .news-nota a img, .contenedor-news .contenedor .news-instagram a img {
+    height: 10em;
+  }
+
+  .contenedor-footer .contenedor {
+    flex-direction: column;
+  }
+
+  .formulario__contenedor h2 {
+    font-size: 1em;
+  }
+
+  .contenedor-footer .footer__contenedor-form, .contenedor-footer .footer__datos {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contenedor-footer .footer__datos a {
+    font-size: 0.7em;
   }
 }
 
