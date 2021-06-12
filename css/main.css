@@ -225,20 +225,26 @@ a {
 }
 
 .header {
-  background: url("../media/hg-logo.jpg");
+  background: #011925;
   background-position: center;
   background-repeat: no-repeat;
 }
-.header .contenedor-logo {
+.header .contenedor-portada {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header .contenedor-logo img {
-  display: none;
-  width: 90%;
+.header .contenedor-portada .contenedor-logo {
+  max-width: 50%;
+}
+.header .contenedor-portada .contenedor-logo img {
+  width: 100%;
+  padding-right: 3em;
+}
+.header .contenedor-portada .ventana img {
+  height: 100% !important;
 }
 
 .header .contenedor-icono {
@@ -518,8 +524,12 @@ a {
     background: none;
     height: 100vh;
   }
-  .header .contenedor-logo img {
-    display: block;
+  .header .contenedor-logo {
+    max-width: 100% !important;
+    padding: 0 2em;
+  }
+  .header .ventana {
+    display: none;
   }
 
   .titulo {
