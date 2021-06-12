@@ -158,12 +158,12 @@ a {
 }
 .nav-mobile .enlaces-mobile {
   position: fixed;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   top: 0;
   right: 0;
   width: 100%;
   height: 100vh;
-  padding: 80px 0 20px 40px;
+  padding: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@ a {
   z-index: 100;
 }
 .nav-mobile .hamburguer i {
-  color: #efefef;
+  color: #cad500;
   font-size: 30px;
   z-index: 100;
 }
@@ -244,7 +244,7 @@ a {
 .header .contenedor-icono {
   position: absolute;
   z-index: 99;
-  bottom: 3%;
+  bottom: 10%;
   left: 50%;
   font-size: 40px;
   animation: bajar-subir 1s ease infinite;
@@ -584,6 +584,10 @@ a {
   .formulario__grupo input, .formulario__grupo textarea {
     margin: 3px 0;
     font-size: 0.7em;
+  }
+
+  .formulario__grupo textarea {
+    height: 3.5rem;
   }
 
   .contenedor-footer .footer__contenedor-form, .contenedor-footer .footer__datos {
