@@ -225,26 +225,24 @@ a {
 }
 
 .header {
-  background: #011925;
+  background: url("../media/foto8.jpg") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header .contenedor-portada {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .header .contenedor-portada .contenedor-logo {
-  max-width: 50%;
+  max-width: 10%;
+  margin: 0.2em;
 }
 .header .contenedor-portada .contenedor-logo img {
   width: 100%;
-  padding-right: 3em;
-}
-.header .contenedor-portada .ventana img {
-  height: 100% !important;
+  border-radius: 3%;
 }
 
 .header .contenedor-icono {
@@ -521,15 +519,16 @@ a {
   }
 
   .header {
-    background: none;
     height: 100vh;
   }
-  .header .contenedor-logo {
-    max-width: 100% !important;
-    padding: 0 2em;
+  .header .contenedor-portada {
+    justify-content: center;
+    align-items: flex-start;
   }
-  .header .ventana {
-    display: none;
+  .header .contenedor-portada .contenedor-logo {
+    width: 15em;
+    max-width: 100% !important;
+    padding: 3em 2em 0em 2em;
   }
 
   .titulo {
