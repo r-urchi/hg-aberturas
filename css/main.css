@@ -20,6 +20,10 @@ a {
   color: #fff;
 }
 
+.displayNone {
+  display: none !important;
+}
+
 .titulo {
   margin: 2em 0 0.5em 0;
   padding: 0;
@@ -39,13 +43,13 @@ a {
 }
 
 .fp-controlArrow.fp-prev {
-  left: 50px;
+  left: 40px;
   border-width: 20px 20px 20px 0;
   border-color: transparent #cad500 transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
-  right: 50px;
+  right: 40px;
   border-width: 20px 0 20px 20px;
   border-color: transparent transparent transparent #cad500;
 }
@@ -92,6 +96,34 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#fp-nav ul li:first-child {
+  display: none !important;
+}
+
+.contenedor-portada {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+}
+.contenedor-portada .contenedor-logo {
+  max-width: 10%;
+  margin: 0.2em;
+}
+.contenedor-portada .contenedor-logo img {
+  width: 100%;
+  min-width: 5.5em;
+  margin-top: 1.5em;
+  border-radius: 3%;
+}
+@media screen and (max-width: 720px) {
+  .contenedor-portada .contenedor-logo img {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+  }
 }
 
 /* ------------------------- */
@@ -224,25 +256,25 @@ a {
   clip-path: circle(150% at 100% 0);
 }
 
+.contenedor.nav-mobile {
+  z-index: 9999 !important;
+}
+
+.menu-mobile .contenedor-portada {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .menu-mobile .contenedor-portada {
+    display: flex;
+  }
+}
+
 .header {
   background: url("../media/foto8.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-}
-.header .contenedor-portada {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.header .contenedor-portada .contenedor-logo {
-  max-width: 10%;
-  margin: 0.2em;
-}
-.header .contenedor-portada .contenedor-logo img {
-  width: 100%;
-  border-radius: 3%;
+  display: none !important;
+  height: 0px !important;
 }
 
 .header .contenedor-icono {
@@ -269,7 +301,7 @@ a {
   }
 }
 .contenedor-quienes-somos {
-  background: url("../media/foto6.jpg") no-repeat;
+  background: url("../media/FotoQuienesSomos.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -309,11 +341,11 @@ a {
 }
 
 .productos article:nth-child(1) {
-  background-image: url("../media/foto2.jpg");
+  background-image: url("../media/FotoProducto.jpg");
 }
 
 .productos article:nth-child(2) {
-  background-image: url("../media/foto6.jpg");
+  background-image: url("../media/FotoProducto2.jpg");
 }
 
 .productos article:nth-child(3) {
@@ -328,12 +360,18 @@ a {
   background-image: url("../media/foto5.jpg");
 }
 
-.producto-foto h3 {
-  text-align: center;
-  margin: 0 8em;
-  padding: 3em;
-  background: rgba(0, 0, 0, 0.3);
+.producto-foto p {
+  text-align: left;
+  font-size: 0.9em;
+  margin: 0 1em;
+  padding: 3em 5em;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 1em;
+}
+@media screen and (max-width: 720px) {
+  .producto-foto p {
+    padding: 3em 3.5em;
+  }
 }
 
 .novedades {
