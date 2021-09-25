@@ -1,0 +1,135 @@
+/* ------------------------- */
+/* Clases menu  lateral */
+/* ------------------------- */
+
+#fp-nav ul li a span
+    background: #cad500
+
+
+#fp-nav ul li .fp-tooltip
+    color: #cad500
+
+
+/* ------------------------- */
+/* Menu navegacion */
+/* ------------------------- */
+
+.nav 
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 70
+    width: 100%
+    margin: 0
+    padding: 10px 20px
+
+
+.nav li,
+.nav a
+    display: inline-block
+    margin: 10px
+    text-decoration: none
+    font-family: 'Oswald', sans-serif
+    font-size: 19px
+    color: #fff
+    transition: .5s ease
+    text-shadow: 0px 0px 20px #000
+
+
+.nav li.active
+    border-bottom: 2px solid #cad500
+
+
+.menu li a
+    transition: .5s ease
+    margin: 0
+    padding: 0
+
+
+.menu li.active a,
+.menu li:hover a
+    color: #cad500
+
+// --------------------------------------
+// Mobile 
+// --------------------------------------
+.nav-mobile
+    display: none
+    position: fixed
+    align-items: center
+    justify-content: flex-end
+    z-index: 70
+    width: 100%
+    margin: 0
+    padding: 10px 20px
+    .enlaces-mobile
+        position: fixed
+        background: rgba(0, 0, 0, .9)
+        top: 0
+        right: 0
+        width: 100%
+        height: 100vh
+        padding: 5rem
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        -webkit-box-pack: space-evenly
+        -ms-flex-pack: space-evenly
+        justify-content: space-evenly
+        -webkit-clip-path: circle(0.0% at 100% 0)
+        clip-path: circle(0.0% at 100% 0)
+        font-weight: 300
+        -webkit-transition: ease-in-out 0.5s
+        -o-transition: ease-in-out 0.5s
+        transition: ease-in-out 0.5s
+        li
+            list-style: none
+            a
+                color: #ffffff
+                text-decoration: none
+                -webkit-transition: .3s all ease
+                -o-transition: .3s all ease
+                transition: .3s all ease
+                &:hover
+                    color: #cad500
+    .hamburguer
+        width: 50px
+        height: 50px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        border-radius: 10px
+        z-index: 100
+        cursor: pointer
+        -webkit-transition: .5s all ease
+        -o-transition: .5s all ease
+        transition: .5s all ease
+        z-index: 100
+        i
+            color: #cad500
+            font-size: 30px
+            z-index: 100
+    .menuDos
+        -webkit-clip-path: circle(150% at 100% 0)
+        clip-path: circle(150% at 100% 0) 
+ 
+.contenedor.nav-mobile
+    z-index: 9999 !important
+    @media screen and (min-width: 721px) {
+        .menu-mobile
+            .contenedor-portada{
+                }
+    }
+    .contenedor-portada
+        
