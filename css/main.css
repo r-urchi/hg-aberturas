@@ -115,7 +115,7 @@ a {
 }
 .contenedor-portada .contenedor-logo img {
   width: 100%;
-  min-width: 5.5em;
+  min-width: 7em;
   margin-top: 1.5em;
   border-radius: 3%;
 }
@@ -646,11 +646,15 @@ a {
     height: 35px;
   }
 
-  .contenedor-footer .footer__datos {
+  .contenedor-footer .footer__datos a {
     font-size: 0.7em;
   }
-  .contenedor-footer .footer__datos iframe {
+  .contenedor-footer .footer__datos a iframe {
     height: 50%;
+  }
+
+  .footer__contenedor-form {
+    margin-bottom: 0.5em;
   }
 }
 
